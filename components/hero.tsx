@@ -147,7 +147,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="mt-8 grid max-w-xl grid-cols-2 gap-2 text-sm font-medium sm:mt-10 sm:gap-2.5 sm:text-base lg:mt-14 lg:flex lg:max-w-none lg:flex-wrap lg:gap-x-8 lg:gap-y-4 lg:text-white/95"
+              className="mt-8 grid max-w-xl grid-cols-2 gap-2 text-sm font-medium text-limestone-ink sm:mt-10 sm:gap-2.5 sm:text-base lg:mt-14 lg:flex lg:max-w-none lg:flex-wrap lg:justify-start lg:gap-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55, duration: 0.6 }}
@@ -161,16 +161,11 @@ export function Hero() {
                   key={label}
                   className={cn(
                     "flex items-center gap-2",
-                    "rounded-xl border border-limestone-secondary/25 bg-white/95 px-3 py-2.5 text-limestone-ink shadow-md backdrop-blur-sm",
-                    index === 2 && "max-lg:col-span-2",
-                    "lg:border-0 lg:bg-transparent lg:px-0 lg:py-0 lg:text-white/95 lg:shadow-none"
+                    "rounded-xl border border-limestone-secondary/25 bg-white/95 px-3 py-2.5 shadow-md backdrop-blur-sm",
+                    index === 2 && "max-lg:col-span-2"
                   )}
                 >
-                  <BadgeCheck
-                    className={cn(
-                      "size-6 shrink-0 text-limestone-primary lg:text-limestone-accent"
-                    )}
-                  />
+                  <BadgeCheck className="text-limestone-primary size-6 shrink-0" />
                   <span>{label}</span>
                 </div>
               ))}
