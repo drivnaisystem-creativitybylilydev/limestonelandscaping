@@ -76,7 +76,7 @@ export function Hero() {
               </span>{" "}
               for {SITE.heroCity}
             </h1>
-            <p className="mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white drop-shadow-md sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem]">
+            <p className="mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem] [text-shadow:0_1px_2px_rgba(0,0,0,0.95),0_2px_10px_rgba(0,0,0,0.75),0_4px_24px_rgba(0,0,0,0.5)]">
               Transform your property with professional landscaping and snow
               removal — thoughtful design, dependable crews, and results
               you&apos;ll be proud to come home to.
