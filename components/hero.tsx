@@ -72,7 +72,7 @@ export function Hero() {
             <h1 className="font-heading text-4xl font-bold leading-[1.1] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] sm:text-5xl md:text-6xl lg:text-6xl lg:leading-[1.06] xl:text-7xl">
               Picture-perfect{" "}
               <span
-                className="bg-gradient-to-br from-limestone-primary via-[#356019] to-limestone-secondary bg-clip-text font-extrabold text-transparent drop-shadow-[0_2px_10px_rgba(45,80,22,0.22)] [filter:drop-shadow(0_0_14px_rgba(107,156,74,0.65))_drop-shadow(0_0_28px_rgba(74,124,44,0.4))]"
+                className="bg-gradient-to-br from-[#c4e9a0] via-limestone-accent to-[#8bc95a] bg-clip-text font-extrabold text-transparent [filter:drop-shadow(0_0_1px_rgba(255,255,255,0.95))_drop-shadow(0_0_10px_rgba(255,255,255,0.7))_drop-shadow(0_0_24px_rgba(255,255,255,0.45))]"
               >
                 Landscaping
               </span>{" "}
