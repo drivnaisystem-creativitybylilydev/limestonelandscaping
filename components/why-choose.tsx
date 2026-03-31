@@ -15,7 +15,7 @@ const points = [
 
 export function WhyChoose() {
   return (
-    <section className="border-b border-limestone-secondary/15 bg-white py-16 md:py-24">
+    <section className="border-b border-limestone-secondary/15 bg-white py-10 sm:py-14 md:py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:items-center">
         <FadeIn>
           <p className="text-limestone-secondary font-semibold tracking-wide uppercase">

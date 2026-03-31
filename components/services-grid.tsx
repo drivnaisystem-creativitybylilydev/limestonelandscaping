@@ -73,7 +73,7 @@ export function ServicesGrid() {
   return (
     <section
       id="services"
-      className="w-full border-b border-limestone-secondary/15 bg-white py-16 md:py-24"
+      className="w-full border-b border-limestone-secondary/15 bg-white py-10 sm:py-14 md:py-20 lg:py-24"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20">
         <FadeIn>

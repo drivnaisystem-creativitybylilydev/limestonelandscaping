@@ -121,7 +121,7 @@ export function QuoteForm({
             "text-limestone-primary font-semibold tracking-tight",
             inDialog ? "text-xl" : "text-2xl",
             centerHeading &&
-              "w-full max-w-none text-2xl font-bold leading-[1.12] tracking-tight text-pretty sm:text-3xl md:text-4xl md:leading-[1.08]"
+              "w-full max-w-none text-xl font-bold leading-[1.15] tracking-tight text-pretty sm:text-2xl md:text-3xl lg:text-4xl md:leading-[1.08]"
           )}
         >
           {centerHeading ? (
@@ -145,8 +145,8 @@ export function QuoteForm({
           day.
         </p>
       </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
+      <CardContent className="px-4 pb-5 pt-0 sm:px-6 sm:pb-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3.5 sm:gap-4">
           <div>
             <Label htmlFor={`name-${inDialog}`}>Name *</Label>
             <Input

@@ -30,7 +30,7 @@ export function BeforeAfterShowcase() {
   return (
     <section
       id="gallery"
-      className="border-b border-limestone-secondary/15 bg-limestone-cream/50 py-16 md:py-24"
+      className="border-b border-limestone-secondary/15 bg-limestone-cream/50 py-10 sm:py-14 md:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4">
         <FadeIn>

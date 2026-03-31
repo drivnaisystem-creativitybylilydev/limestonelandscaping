@@ -16,7 +16,7 @@ function LandingInner() {
   return (
     <>
       <SiteHeader />
-      <main className="pb-24">
+      <main className="pb-[max(5.5rem,calc(4.25rem+env(safe-area-inset-bottom)))] xl:pb-0">
         <Hero />
         <ServicesGrid />
         <BeforeAfterShowcase />

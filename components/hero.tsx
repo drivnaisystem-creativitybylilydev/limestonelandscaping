@@ -29,7 +29,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-[min(92vh,920px)] flex-col overflow-hidden pb-12 pt-28 md:min-h-[min(90vh,960px)] md:pb-16 md:pt-32"
+      className="relative flex min-h-[min(88vh,860px)] flex-col overflow-hidden pb-6 pt-24 sm:min-h-[min(90vh,900px)] sm:pb-10 sm:pt-28 md:min-h-[min(90vh,960px)] md:pb-16 md:pt-32"
     >
       <motion.div
         style={{ y }}
@@ -57,7 +57,7 @@ export function Hero() {
       </motion.div>
 
       <div className="relative z-10 mx-auto mt-auto w-full max-w-7xl px-4">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between lg:gap-12 xl:gap-14">
+        <div className="flex flex-col gap-7 pb-2 sm:gap-9 sm:pb-0 lg:flex-row lg:items-end lg:justify-between lg:gap-12 xl:gap-14">
           <motion.div
             initial={{ opacity: 0, y: 48 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,17 +69,17 @@ export function Hero() {
                 {SITE.tagline}
               </span>
             </p>
-            <h1 className="font-heading text-5xl font-bold leading-[1.08] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] sm:text-6xl lg:text-6xl lg:leading-[1.06] xl:text-7xl">
+            <h1 className="font-heading text-4xl font-bold leading-[1.1] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] sm:text-5xl md:text-6xl lg:text-6xl lg:leading-[1.06] xl:text-7xl">
               Picture-perfect landscaping for {SITE.heroCity}
             </h1>
-            <p className="mt-6 max-w-2xl text-xl font-medium leading-relaxed text-white drop-shadow-md sm:text-2xl lg:mt-7 lg:max-w-[42rem]">
+            <p className="mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white drop-shadow-md sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem]">
               Transform your property with professional landscaping and snow
               removal — thoughtful design, dependable crews, and results
               you&apos;ll be proud to come home to.
             </p>
 
             <motion.div
-              className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-11"
+              className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap lg:mt-11"
               initial="hidden"
               animate="visible"
               variants={{
@@ -87,6 +87,7 @@ export function Hero() {
               }}
             >
               <motion.div
+                className="hidden lg:block"
                 variants={{
                   hidden: { opacity: 0, y: 16 },
                   visible: { opacity: 1, y: 0 },
@@ -138,7 +139,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="mt-12 flex flex-wrap gap-x-8 gap-y-4 text-base font-medium text-white/95 lg:mt-14"
+              className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/95 sm:mt-10 sm:gap-x-8 sm:gap-y-4 sm:text-base lg:mt-14"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55, duration: 0.6 }}
@@ -158,7 +159,7 @@ export function Hero() {
 
           <div
             id="quote"
-            className="relative z-20 w-full min-w-0 shrink-0 scroll-mt-28 lg:w-full lg:max-w-[420px] xl:max-w-[440px]"
+            className="relative z-20 w-full min-w-0 shrink-0 scroll-mt-24 sm:scroll-mt-28 lg:w-full lg:max-w-[420px] xl:max-w-[440px]"
           >
             <QuoteForm
               heading="Get your free quote"

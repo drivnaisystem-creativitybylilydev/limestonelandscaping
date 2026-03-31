@@ -27,7 +27,7 @@ export function FinalCta() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden py-20 md:py-28"
+      className="relative overflow-hidden py-12 sm:py-16 md:py-22 lg:py-28"
     >
       <motion.div
         className="absolute inset-0 -z-10"
