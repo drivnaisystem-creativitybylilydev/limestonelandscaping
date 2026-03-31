@@ -62,21 +62,21 @@ export function Hero() {
             initial={{ opacity: 0, y: 48 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease: "easeOut" }}
-            className="relative z-20 mb-0 flex min-h-0 min-w-0 w-full max-w-2xl flex-col justify-end text-white lg:mb-10 lg:max-w-none lg:flex-1 xl:max-w-none xl:pr-4"
+            className="relative z-20 mb-0 flex min-h-0 min-w-0 w-full flex-col justify-end text-white lg:mb-10 lg:max-w-none lg:flex-1 xl:max-w-none xl:pr-4"
           >
-            <p className="mb-4 lg:mb-5">
+            <p className="mb-4 max-lg:flex max-lg:justify-center lg:mb-5">
               <span className="bg-black/45 text-limestone-cream inline-block rounded-full px-4 py-2 text-sm font-semibold tracking-wide uppercase ring-1 ring-white/20 backdrop-blur-sm sm:px-5 sm:text-base">
                 {SITE.tagline}
               </span>
             </p>
-            <h1 className="font-heading text-4xl font-bold leading-[1.1] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] sm:text-5xl md:text-6xl lg:text-6xl lg:leading-[1.06] xl:text-7xl">
+            <h1 className="font-heading w-full text-4xl font-bold leading-[1.1] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] max-lg:text-center sm:text-5xl md:text-6xl lg:text-left lg:text-6xl lg:leading-[1.06] xl:text-7xl">
               Picture-perfect{" "}
-              <span className="font-extrabold underline decoration-2 decoration-limestone-accent underline-offset-[2px] [text-underline-position:from-font]">
+              <span className="inline-block font-extrabold underline decoration-2 decoration-limestone-accent underline-offset-[2px] [text-underline-position:from-font] [text-decoration-skip-ink:none]">
                 Landscaping
               </span>{" "}
               for {SITE.heroCity}
             </h1>
-            <p className="mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem] [text-shadow:0_1px_2px_rgba(0,0,0,0.95),0_2px_10px_rgba(0,0,0,0.75),0_4px_24px_rgba(0,0,0,0.5)]">
+            <p className="mt-4 w-full max-w-2xl text-lg font-medium leading-relaxed text-white max-lg:max-w-none max-lg:text-center sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem] lg:text-left [text-shadow:0_1px_2px_rgba(0,0,0,0.95),0_2px_10px_rgba(0,0,0,0.75),0_4px_24px_rgba(0,0,0,0.5)]">
               Transform your property with professional landscaping and snow
               removal — thoughtful design, dependable crews, and results
               you&apos;ll be proud to come home to.
@@ -147,7 +147,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="mt-8 grid max-w-xl grid-cols-2 gap-2 text-sm font-medium text-limestone-ink sm:mt-10 sm:gap-2.5 sm:text-base lg:mt-14 lg:flex lg:max-w-none lg:flex-wrap lg:justify-start lg:gap-3"
+              className="mt-8 grid max-w-xl grid-cols-2 gap-2 text-sm font-medium text-limestone-ink max-lg:mx-auto sm:mt-10 sm:gap-2.5 sm:text-base lg:mt-14 lg:mx-0 lg:flex lg:max-w-none lg:flex-wrap lg:justify-start lg:gap-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55, duration: 0.6 }}
