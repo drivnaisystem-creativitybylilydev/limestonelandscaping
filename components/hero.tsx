@@ -70,7 +70,13 @@ export function Hero() {
               </span>
             </p>
             <h1 className="font-heading text-4xl font-bold leading-[1.1] tracking-tight text-balance text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.85)] sm:text-5xl md:text-6xl lg:text-6xl lg:leading-[1.06] xl:text-7xl">
-              Picture-perfect landscaping for {SITE.heroCity}
+              Picture-perfect{" "}
+              <span
+                className="bg-gradient-to-br from-limestone-primary via-[#356019] to-limestone-secondary bg-clip-text font-extrabold text-transparent drop-shadow-[0_2px_10px_rgba(45,80,22,0.22)] [filter:drop-shadow(0_0_14px_rgba(107,156,74,0.65))_drop-shadow(0_0_28px_rgba(74,124,44,0.4))]"
+              >
+                Landscaping
+              </span>{" "}
+              for {SITE.heroCity}
             </h1>
             <p className="mt-4 max-w-2xl text-lg font-medium leading-relaxed text-white drop-shadow-md sm:mt-6 sm:text-xl md:text-2xl lg:mt-7 lg:max-w-[42rem]">
               Transform your property with professional landscaping and snow
