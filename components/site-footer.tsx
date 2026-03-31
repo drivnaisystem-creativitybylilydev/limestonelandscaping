@@ -41,9 +41,11 @@ export function SiteFooter() {
               Facebook
             </a>
             <a
-              href="#"
+              href={SITE.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:bg-white/10 rounded-lg border border-white/20 px-3 py-2 font-medium"
-              aria-label="Instagram (placeholder link)"
+              aria-label="Limestone Landscaping on Instagram"
             >
               Instagram
             </a>

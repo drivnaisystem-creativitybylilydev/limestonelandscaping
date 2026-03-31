@@ -7,6 +7,7 @@ export const SITE = {
   address: "Central Massachusetts",
   primaryArea: "Worcester County",
   googleReviewUrl: "https://www.google.com/maps",
+  instagramUrl: "https://www.instagram.com/limestone_landscaping_/",
   heroCity: "Central Massachusetts",
   foundedYear: 2010,
 } as const;

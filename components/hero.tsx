@@ -113,7 +113,9 @@ export function Hero() {
                   onClick={scrollToWork}
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" }),
-                    "min-h-14 w-full border-white/70 bg-black/35 px-9 text-lg font-semibold text-white shadow-sm backdrop-blur-sm hover:bg-black/45 sm:w-auto"
+                    "min-h-14 w-full px-9 text-lg font-semibold sm:w-auto",
+                    "max-lg:border-limestone-secondary/30 max-lg:bg-white/95 max-lg:text-limestone-primary max-lg:shadow-md backdrop-blur-sm hover:max-lg:bg-white",
+                    "lg:border-white/70 lg:bg-black/35 lg:text-white lg:shadow-sm lg:hover:bg-black/45"
                   )}
                 >
                   View our work
@@ -129,17 +131,19 @@ export function Hero() {
                   href={`tel:+1${SITE.phoneTel}`}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "lg" }),
-                    "min-h-14 w-full gap-2 text-lg text-white drop-shadow-md hover:bg-white/15 sm:w-auto"
+                    "min-h-14 w-full gap-2 text-lg sm:w-auto",
+                    "max-lg:border max-lg:border-limestone-secondary/30 max-lg:bg-white/95 max-lg:text-limestone-primary max-lg:shadow-md backdrop-blur-sm hover:max-lg:bg-white",
+                    "lg:text-white lg:drop-shadow-md lg:hover:bg-white/15"
                   )}
                 >
-                  <Phone className="size-6" aria-hidden />
+                  <Phone className="size-6 shrink-0" aria-hidden />
                   {SITE.phoneDisplay}
                 </a>
               </motion.div>
             </motion.div>
 
             <motion.div
-              className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-white/95 sm:mt-10 sm:gap-x-8 sm:gap-y-4 sm:text-base lg:mt-14"
+              className="mt-8 grid max-w-xl grid-cols-2 gap-2 text-sm font-medium sm:mt-10 sm:gap-2.5 sm:text-base lg:mt-14 lg:flex lg:max-w-none lg:flex-wrap lg:gap-x-8 lg:gap-y-4 lg:text-white/95"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55, duration: 0.6 }}
@@ -148,9 +152,21 @@ export function Hero() {
                 "15+ years experience",
                 "Licensed & insured",
                 "100+ projects completed",
-              ].map((label) => (
-                <div key={label} className="flex items-center gap-2">
-                  <BadgeCheck className="text-limestone-accent size-6 shrink-0" />
+              ].map((label, index) => (
+                <div
+                  key={label}
+                  className={cn(
+                    "flex items-center gap-2",
+                    "rounded-xl border border-limestone-secondary/25 bg-white/95 px-3 py-2.5 text-limestone-ink shadow-md backdrop-blur-sm",
+                    index === 2 && "max-lg:col-span-2",
+                    "lg:border-0 lg:bg-transparent lg:px-0 lg:py-0 lg:text-white/95 lg:shadow-none"
+                  )}
+                >
+                  <BadgeCheck
+                    className={cn(
+                      "size-6 shrink-0 text-limestone-primary lg:text-limestone-accent"
+                    )}
+                  />
                   <span>{label}</span>
                 </div>
               ))}
